@@ -8,16 +8,13 @@ function beepBoopFunction(number) {
     for (var i = 0; i < (arrayBeepBoopOnes.length+1); i++) {
       if (parseInt(inputArray[0]) === i ) {
         var resultArrayPos4 = arrayBeepBoopOnes[i];
-          }
-      // else if (inputArray[0] === "0") {
-      //   var resultArrayPos4 = "you entered zero!";
       }
     }
   }
     return resultArrayPos4
 }
 
-var arrayBeepBoopOnes = ["Beep!", "Boop!", "", "I'm sorry, Dave. I'm afraid I can't do that.", "", "", "", "", "", ""];
+var arrayBeepBoopOnes = ["Beep!", "Boop!", "", "I'm sorry, Dave. I'm afraid I can't do that.", "", "", "I'm sorry, Dave. I'm afraid I can't do that.", "", "", "I'm sorry, Dave. I'm afraid I can't do that."];
 var arrayBeepBoopTens = [];
 
 $(document).ready(function() {

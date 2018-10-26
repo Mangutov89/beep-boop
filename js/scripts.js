@@ -1,12 +1,13 @@
 function beepBoopFunction(number) {
-  if (number / 3) {
-    var divNum = "I'm sorry, Dave. I'm afraid I can't do that."
-    return divNum;
-  } else (number > 10) {
-    var newNum = "Enter a lower number"
-    return newNum
+  var newArray = [];
+  for (var i = 0; i < number.length; i++) {
+    newArray.push(number.charAt(i));
+    console.log(newArray);
   }
+  return newArray;
 }
+
+var arrayBeepBoop = ["Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that."]
 
 $(document).ready(function() {
   $("form#beepboop").submit(function(event) {
@@ -16,4 +17,5 @@ $(document).ready(function() {
 
   $("#result").show();
   $("#result").text(result);
+  });
 });

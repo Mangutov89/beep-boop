@@ -1,10 +1,12 @@
 function beepBoopFunction(number) {
-  var newArray = [];
-  for (var i = 0; i < number.length; i++) {
-    newArray.push(number.charAt(i));
-    console.log(newArray);
+  if (number) {
+    var newArray = [...Array(number + 1).keys()];
+    var stringArray = newArray.toString()
+    console.log(stringArray);
+    var splitArray = stringArray.split('');
+    console.log(splitArray);
+    return splitArray
   }
-  return newArray;
 }
 
 var arrayBeepBoop = ["Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that."]
